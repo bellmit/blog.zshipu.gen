@@ -19,19 +19,6 @@ tags: flutter
 
 * * *
 
-嘿， 布鲁上个月，我推出了我的第一个应用程序结冰成瘾 - 我今年正在构建的12个启动项目之一。这个系列深入探讨我是如何构建的。
-
-刚刚开始与 Flutter？[在此处查看第一个帖子](/2020/05/15/zero-to-hero-1.html)。否则，在我的两个应用程序中试用此帖子的功能。
-
-  [![Project photo](https://d33wubrfki0l68.cloudfront.net/f06e33fce84bdb5bb27eb2017be560b2f1043487/12aa5/images/projects/icing-addict.jpg) 
- 结冰成瘾](https://zshipu.com/t?url=https://icing-addict.kangabru.xyz/) [![Project photo](https://d33wubrfki0l68.cloudfront.net/32d330dd37f475782ce9e9dc184dcbe9b5149d99/9af39/images/projects/squiggle-snek.jpg) 
- 斯奎格 · 斯内克](https://zshipu.com/t?url=https://play.google.com/store/apps/details?id=com.kangabru.squiggle_snake) 
-
-* * *
-
-  订阅
-
-* * *
 
 ## 小部件屏幕截图
 
@@ -162,7 +149,3 @@ class MagnifyExampleState extends State<MagnifyExample> with MagnifyingGlass {
 <font _mstmutation="1" _msthash="427336" _msttexthash="567592870">只需确保将小部件_放在呼叫_之外。如果不是，你会得到一个时髦的镜像效果，如在视频中。很酷的效果， 虽然。</font>```magnifyingGlass()``````magnifyThis```
 
 * * *
-
-嗯， 今天就是这样。调谐下周， 我去看看结冰算法本身。应该是一个有趣的！再见🤙
-
-  订阅

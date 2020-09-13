@@ -28,19 +28,8 @@ tags: flutter
     *   [列表滑块](#list-slider)
     *   [按钮状态切换](#button-state-toggle)
 
-* * *
 
-嘿， 布鲁上个月，我推出了我的第一个应用程序结冰成瘾 - 我今年正在构建的12个启动项目之一。这个系列深入探讨我是如何构建的。
 
-刚刚开始与 Flutter？在此处查看第一个帖子或游戏本身：
-
-  [![Project photo](https://d33wubrfki0l68.cloudfront.net/897a33b25c9053e1df6fbefa8f54bc8f90a07203/e15ca/images/posts/2020-05-15/banner.jpg) 
- 零到英雄 - 第 1 部分 - 我如何建立我的游戏与 Flutter 在 1 个月。](/2020/05/15/zero-to-hero-1) [![Project photo](https://d33wubrfki0l68.cloudfront.net/f06e33fce84bdb5bb27eb2017be560b2f1043487/12aa5/images/projects/icing-addict.jpg) 
- 结冰成瘾](https://zshipu.com/t?url=https://icing-addict.kangabru.xyz/) 
-
-* * *
-
-  订阅
 
 * * *
 
@@ -481,10 +470,3 @@ class ShadowContainer extends StatelessWidget {
 
 * * *
 
-就是这样！希望你学到了一些东西或受到启发，将动画添加到你的应用。
-
-一旦你得到他们的窍，Flutter动画是相当简单的实现。你所有你需要做的就是开始！
-
-一如既往，如有疑问，请一直伸出援手，下次见！
-
-  订阅

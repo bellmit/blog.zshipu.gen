@@ -30,17 +30,7 @@ tags: flutter
 
 * * *
 
-嘿， 布鲁上周，我推出了我的第一个应用程序结冰成瘾 - 今年我构建的12个启动项目之一。这个系列将深入探讨我是如何构建的。
 
-在这第一篇文章中将谈论 Flutter 本身。你问什么？我会告诉你所有关于它， 所以你今天就可以开始使用它！
-
-要查看我的游戏或其功能摘要，请查看这些链接。
-
-  [![Project photo](https://d33wubrfki0l68.cloudfront.net/e0333aecd625ead63fabc2dc325462eba4af9fff/e0323/images/posts/2020-05-01/banner-app.jpg) 
- 结冰成瘾 - 我如何建立它](/2020/05/01/icing-addict-app) [![Project photo](https://d33wubrfki0l68.cloudfront.net/f06e33fce84bdb5bb27eb2017be560b2f1043487/12aa5/images/projects/icing-addict.jpg) 
- 结冰成瘾](https://zshipu.com/t?url=https://icing-addict.kangabru.xyz/) 
-
-* * *
 
 ## 那么什么是Flutter呢？
 

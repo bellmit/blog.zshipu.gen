@@ -19,11 +19,6 @@ tags: flutter
     *   [时间复杂性和 k-d 树](#time-complexity-and-k-d-trees)
     *   [计算分数](#calculating-the-score)
 
-* * *
-
-嘿， 布鲁上个月，我推出了我的第一个应用程序结冰成瘾 - 我今年正在构建的12个启动项目之一。这个系列深入探讨我是如何构建的。
-
-* * *
 
 ![](https://d33wubrfki0l68.cloudfront.net/abc4a24476856b318c5fbca77a47499f59a3f978/6f020/images/posts/2020-05-01/app.jpg)
 
