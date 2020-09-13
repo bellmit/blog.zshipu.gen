@@ -1,3 +1,9 @@
+title: dart 开始
+author: 知识铺
+date: 2020-09-13 13:53:36
+tags:
+---
+
 # Dart
 
 在安装Flutter SDK的时候，它已经内置了Dart了, 但是，如果你想单独学习Dart，并且运行自己的Dart代码，最好去安装一个Dart SDK 
