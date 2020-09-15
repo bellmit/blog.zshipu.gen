@@ -10,19 +10,20 @@
     </form>
     <%- partial('_partial/tag') %>
     <% if (theme.searchAll) { %>
-    <div id="local-search-result">
+    <div id=" local-search-result">
 
-    </div>
-    <% } %>
-    <nav id="title-list-nav">
-        <% site.posts.forEach(function(post, i){  %>
-        <a <% if(post.top){%>id="top"<%}%> class="<% post.categories.forEach(function(category, i){ %><%=category.name%> <% }) %>"
-           href="/tlg<%- url_for(post.path) %>"
-           data-tag="<% post.tags.forEach(function(tag, i){ %><%=tag.name%><% if (i+1<post.tags.length){%>,<%}})%>"
-           data-author="<% if(theme.author && theme.author.on==true && post.author) {%><%=post.author %><%}%>" >
+</div>
+<% } %>
+<nav id="title-list-nav">
+    <% site.posts.forEach(function(post, i){  %>
+    <a <% if(post.top){%>id="top" <%}%> class="<% post.categories.forEach(function(category, i){ %><%=category.name%>
+        <% }) %>" href="/technology<%- url_for(post.path) %>"
+        data-tag="<% post.tags.forEach(function(tag, i){ %><%=tag.name%><% if (i+1<post.tags.length){%>,<%}})%>"
+        data-author="<% if(theme.author && theme.author.on==true && post.author) {%><%=post.author %><%}%>" >
             <span class="post-title" title="<%=post.title %>"><%=post.title %></span>
-            <span class="post-date" title="<%= date(post.date, 'YYYY-MM-DD HH:mm:ss')%>"><%= date(post.date, 'YYYY/MM/DD') %></span>
-        </a>
-        <% }) %>
-    </nav>
+        <span class="post-date"
+            title="<%= date(post.date, 'YYYY-MM-DD HH:mm:ss')%>"><%= date(post.date, 'YYYY/MM/DD') %></span>
+    </a>
+    <% }) %>
+</nav>
 </div>
