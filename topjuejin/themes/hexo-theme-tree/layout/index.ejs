@@ -1,7 +1,7 @@
 <div id="index">
 	<% page.posts.each(function(post){ %>
 		<div class="index-li">
-			<a href="<%- url_for(post.path) %>">
+			<a href="/topjuejin<%- url_for(post.path) %>">
 				<h2 class="index-title">
 					<%- post.slug.split("/")[post.slug.split("/").length-1] %>
 				</h2>
