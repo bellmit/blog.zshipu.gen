@@ -89,8 +89,8 @@
 						}
 					});
 				}
-
-				showTree(pathToTree(site.posts))
+				set posts = site.posts.sort('-date')
+				showTree(pathToTree(posts))
 			%>
 		</div>
 	</div>
