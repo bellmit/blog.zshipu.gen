@@ -1,23 +1,28 @@
 # Header
 
 menu:
-  主页: /
-  随笔: /tags/随笔/
+  随笔: https://top.zshipu.com/
+  CSDN: https://top.zshipu.com/topcsdn
+  Segmentfault: https://top.zshipu.com/topSegmentfault
+  掘金: https://top.zshipu.com/topjuejin
+  开源中国: https://top.zshipu.com/topopencn
+  Linux中国: https://top.zshipu.com/toplinuxcn
+  Go语言中文网: https://top.zshipu.com/topgoforum
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/liliang8858"
+  #weibo: "https://weibo.com/512316815"
+  #rss: "#"
+  zhihu: "https://www.zhihu.com/people/edwin-ed"
   #qq: "#"
   #weixin: "#"
-  #jianshu: "#"
+  jianshu: "https://www.jianshu.com/u/ab131421cc9e"
   #douban: "#"
-  #segmentfault: "#"
+  segmentfault: "https://segmentfault.com/u/hupan"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:sblig@126.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -47,9 +52,9 @@ reward_type: 2
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay: http://home.zshipu.com/res%2Fimg%2Falipay.jpg
 # 微信二维码图片地址
-weixin: 
+weixin: http://home.zshipu.com/res%2Fimg%2Fweixin.jpg
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -91,11 +96,11 @@ changyan_conf: false
 disqus: false
 
 #5、Gitment
-gitment_owner: false      #你的 GitHub ID
-gitment_repo: ''          #存储评论的 repo
+gitment_owner: liliang8858      #你的 GitHub ID
+gitment_repo: 'zspblogcomment'          #存储评论的 repo
 gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
+  client_id: 'ec3adfa1a072fdaa4d91'           #client ID
+  client_secret: '7a84a35d6d8bce205398c3d5d7f6ee1ce8e1ab53'       #client secret
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -120,11 +125,15 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+  友情链接1: https://blog.zshipu.com/
+  友情链接2: https://blog.zshipu.com/read/
+  友情链接3: https://blog.zshipu.com/note/
+  友情链接4: https://blog.zshipu.com/tlg/
+  友情链接5: https://blog.zshipu.com/media/
+  友情链接6: https://blog.zshipu.com/article/post/
 
 aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+
+article_txt: 免责声明：本页面内容均来源于站内编辑发布，部分信息来源互联网，并不意味着本站赞同其观点或者证实其内容的真实性，如涉及版权等问题，请立即联系客服进行更改或删除，保证您的合法权益。转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。也可以邮件至 sblig@126.com
+
+bottom_text: 浙 ICP 备19032823号-1

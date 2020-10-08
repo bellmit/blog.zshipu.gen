@@ -50,6 +50,7 @@
           </a>
         </div>
       <% } %>
+      <% if(theme.article_txt){%><hr><span style="font-style: italic;color: gray;"> <%=theme.article_txt%> </span><%}%>
     </div>
     <div class="article-info article-info-index">
       <%if(post.top){%>
@@ -87,7 +88,7 @@
       url: config.url+url_for(post.path)
     }) %>
   <% } %>
-  
+
   <% if (theme.wangyiyun){ %>
   <%- partial('post/wangyiyun', {
       key: post.slug,

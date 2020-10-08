@@ -14,7 +14,7 @@ pageTitle: 技术分享
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://top.zshipu.com/
-root: /
+root: /toplinuxcn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
