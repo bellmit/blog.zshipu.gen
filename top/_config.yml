@@ -5,11 +5,12 @@
 # Site
 title: 知识铺
 subtitle: 知识铺
-description: 知识铺
-keywords: 知识铺
+description: 知识铺,一个知识分享，积累，整理的地方。
+keywords: 知识铺,分享,整理
 author: 知识铺
 language: zh-cn
 timezone: Asia/Shanghai
+email: sblig@126.com
 pageTitle: 技术分享
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -41,7 +42,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
   
 # Home page setting
@@ -75,7 +76,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 #theme: landscape
 #theme: 3-hexo
-theme: hexo-theme-tree
+theme: hexo-theme-yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -84,8 +85,36 @@ theme: hexo-theme-tree
 #   repo: https://github.com/zshipu/flutter
 #   branch: master
 #   message: deploy
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xm
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 100
 
 server:
   port: 4002
   compress: true
   header: true
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
