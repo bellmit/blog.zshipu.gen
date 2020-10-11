@@ -1,4 +1,4 @@
-baseURL = "https://blog.zshipu.com/"
+baseURL = "https://geek.zshipu.com/"
 languageCode = "zh-CN"
 title = "知识铺的博客"
 theme = "maupassant"
@@ -43,7 +43,7 @@ disqusShortname = "yourdiscussshortname"  ## 是否开启disqus评论，不要�
 [[params.links]]
   title = "知识铺的博客"
   name = "知识铺的博客"
-  url = "https://blog.zshipu.com//"
+  url = "https://geek.zshipu.com//"
 
 
 ## 侧边栏广告位
