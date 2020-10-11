@@ -1,10 +1,10 @@
-
 ---
 title: Golang基础：go语言中的循环
 author: 知识铺
-date: 2020-10-11 21:56:25
-tags: [golang]
+date: 2020-10-11 21:56:25+08:00
+tags: ["golang"]
 ---
+
 循环允许您重复代码。有不同类型的循环，其中之一是 for 循环。对于[Go（golang）中的循环](https://zshipu.com/t?url=https://golang.org/)，与 Python 更类似于 C/Java。在 Python 中，语法是
 
  <code>for i in range(1,10):</code> 
