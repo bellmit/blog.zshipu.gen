@@ -2,7 +2,9 @@
 ---
 title: Flutter每周一个小部件
 author: 知识铺
-date: 2020-10-25 16:11:40+08:00
+date: 2020-10-25 16:21:13+08:00
 tags: [flutter]
 ---
-<iframe src="//player.bilibili.com/player.html?aid=842425565&bvid=BV1R54y1k7Hr&cid=246568917&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<video id="video" controls="" preload="none" poster="https://sblig.gitee.io/res/yilia/source/2020-10-21_213100.png">
+      <source id="mp4" src="https://www.bilibili.com/video/BV1R54y1k7Hr/" type="video/mp4">
+      </video>
