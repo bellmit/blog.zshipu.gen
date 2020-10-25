@@ -42,7 +42,7 @@ print(thistuple[1])
 
 ### 负索引
 
-<font _mstmutation="1" _msthash="104507" _msttexthash="170143324">负索引表示从末尾开始，指最后一项，指最后一项等。</font>```-1``````-2```
+<font _mstmutation="1" _msthash="104507" _msttexthash="170143324">负索引表示从末尾开始，指最后一项，指最后一项等。</font>```-1 -2```
 
 ### 例子
 

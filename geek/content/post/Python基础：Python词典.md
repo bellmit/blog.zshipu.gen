@@ -247,7 +247,7 @@ print(thisdict)
 
 ## 复制字典
 
-<font _mstmutation="1" _msthash="104442" _msttexthash="377693823">您不能仅仅通过键入来复制字典，因为 ：_将仅引用_，并且 中所做的更改也会自动在 中进行。</font>```dict2 = dict1``````dict2``````dict1``````dict1``````dict2```
+<font _mstmutation="1" _msthash="104442" _msttexthash="377693823">您不能仅仅通过键入来复制字典，因为 ：_将仅引用_，并且 中所做的更改也会自动在 中进行。</font>```dict2 = dict1    dict2    dict1    dict1    dict2```
 
 <font _mstmutation="1" _msthash="104637" _msttexthash="139486464">有办法制作副本，一种方法是使用内置的字典方法。</font> ```copy()```
 

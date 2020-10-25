@@ -92,11 +92,11 @@ y = "Hello, World!"
 ```
 Python 没有声明变量的命令。
 
-您将在 Python 变量章节中[了解有关变量的详细了解](python_variables.asp)。
+您将在 Python 变量章节中了解有关变量的详细了解 。
 
 * * *
 
-<a id="python_comments"></a>
+
 ## 评论
 
 Python 具有用于代码中文档的注释功能。
@@ -110,8 +110,6 @@ Python 中的注释：
  #This is a comment. print("Hello, World!")
 
 ```
-<a id="exercises"></a>
-
 * * *
 
 ## 用练习测试自己

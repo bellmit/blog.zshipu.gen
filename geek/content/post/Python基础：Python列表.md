@@ -53,7 +53,7 @@ print(thislist[1])
 
 ### 负索引
 
-<font _mstmutation="1" _msthash="105287" _msttexthash="170143324">负索引表示从末尾开始，指最后一项，指最后一项等。</font>```-1``````-2```
+<font _mstmutation="1" _msthash="105287" _msttexthash="170143324">负索引表示从末尾开始，指最后一项，指最后一项等。</font>```-1 -2```
 
 ### 例子
 
@@ -159,7 +159,7 @@ for x in thislist:
 
 ```
 
-<font _mstmutation="1" _msthash="105248" _msttexthash="197941380">您将在我们的 Python For 循环章节[中了解有关循环](python_for_loops.asp)的详细了解。</font>```for```
+<font _mstmutation="1" _msthash="105248" _msttexthash="197941380">您将在我们的 Python For 循环章节中了解有关循环的详细了解。</font>```for```
 
 * * *
 

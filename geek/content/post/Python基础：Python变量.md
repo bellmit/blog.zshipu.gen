@@ -43,7 +43,7 @@ print(y)
 
 ```
 
- <font _mstmutation="1" _msthash="145678" _msttexthash="308127170">下一章将介绍有关数据类型（如（字符串）和（整数））的详细了解。</font>```str``````int```
+ <font _mstmutation="1" _msthash="145678" _msttexthash="308127170">下一章将介绍有关数据类型（如（字符串）和（整数））的详细了解。</font>```str int```
 
 * * *
 
@@ -119,17 +119,17 @@ print("Python is " + x)
 <font _mstmutation="1" _msthash="105456" _msttexthash="123209060">还可以使用该字符将变量添加到另一个变量：</font>```+```
 
 ### 例子
-``
+```
  x = "Python is "
 y = "awesome"
 z =  x + y
 print(z)
-
 ```
 
-<font _mstmutation="1" _msthash="104078" _msttexthash="91072020">对于数字，字符用作数学运算符：</font>```+```
+<font _mstmutation="1" _msthash="104078" _msttexthash="91072020">对于数字，字符用作数学运算符：</font>
 
 ### 例子
+
 ```
  x = 5
 y = 10
@@ -225,7 +225,5 @@ myfunc()
 print("Python is " + x)
 
 ```
-
-* * *
 
 

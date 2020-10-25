@@ -24,7 +24,7 @@ tags: [python]
 ```
  def my_function():
   print("Hello from a function")
-
+```
 * * *
 
 ## 调用函数

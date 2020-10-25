@@ -46,7 +46,6 @@ print(type(x))
 
 在 Python 中，在将值分配给变量时设置数据类型：
 
-<style>#dtref td:nth-child(1) { font-family: Consolas,"courier new"; font-size: 110%; }</style>
 
 | Example | Data Type |
 | x = "Hello World" | str | 

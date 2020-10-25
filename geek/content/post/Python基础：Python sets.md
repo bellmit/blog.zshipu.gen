@@ -31,7 +31,7 @@ print(thisset)
 
 不能通过引用索引或键来访问 sets合中的项。
 
-<font _mstmutation="1" _msthash="104312" _msttexthash="284631412">但是，您可以使用 循环遍历 sets项，或使用 关键字询问 sets合中是否存在指定值。</font>```for``````in```
+<font _mstmutation="1" _msthash="104312" _msttexthash="284631412">但是，您可以使用 循环遍历 sets项，或使用 关键字询问 sets合中是否存在指定值。</font>```for in```
 
 ### 例子
 
@@ -114,11 +114,12 @@ print(len(thisset))
 
 ## 删除项目
 
-<font _mstmutation="1" _msthash="105651" _msttexthash="98516223">若要删除 sets合中的项，请使用 或 方法。</font>```remove()``````discard()```
+<font _mstmutation="1" _msthash="105651" _msttexthash="98516223">若要删除 sets合中的项，请使用 或 方法。</font>```remove() discard()```
 
 ### 例子
 
 <font _mstmutation="1" _msthash="220441" _msttexthash="44295758">使用以下方法删除"香蕉"</font>```remove()```
+
 ```
  thisset = {"apple", "banana", "cherry"}
 
@@ -167,6 +168,7 @@ print(thisset)
 ### 例子
 
 <font _mstmutation="1" _msthash="222209" _msttexthash="34430058">该方法清空 sets：</font>```clear()```
+
 ```
  thisset = {"apple", "banana", "cherry"}
 
@@ -220,7 +222,7 @@ print(set1)
 
 ```
 
-<font _mstmutation="1" _msthash="221923" _msttexthash="55210415">**注：**和 将排除任何重复项。</font>```union()``````update()```
+<font _mstmutation="1" _msthash="221923" _msttexthash="55210415">**注：**和 将排除任何重复项。</font>```union()  update()```
 
 还有其他方法连接两个 sets，只保留重复项，或从不复制，检查本页底部的 sets方法的完整列表。
 

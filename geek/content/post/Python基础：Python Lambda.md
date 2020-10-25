@@ -23,6 +23,7 @@ lambda 函数可以接受任何数量的参数，但只能有一个表达式。
 ### 例子
 
 <font _mstmutation="1" _msthash="220480" _msttexthash="74227335">向 参数 添加 10，并返回结果：</font>```a```
+
 ```
  x = lambda a : a + 10
 print(x(5))
@@ -33,7 +34,8 @@ Lambda 函数可以具有多数个参数：
 
 ### 例子
 
-<font _mstmutation="1" _msthash="220922" _msttexthash="74341046">将参数与参数相乘并返回结果：</font>```a``````b```
+<font _mstmutation="1" _msthash="220922" _msttexthash="74341046">将参数与参数相乘并返回结果：</font>```a b```
+
 ```
  x = lambda a, b : a * b
 print(x(5, 6))
@@ -42,7 +44,8 @@ print(x(5, 6))
 
 ### 例子
 
-<font _mstmutation="1" _msthash="221143" _msttexthash="59657650">总结参数 、和 并返回结果：</font>```a``````b``````c```
+<font _mstmutation="1" _msthash="221143" _msttexthash="59657650">总结参数 、和 并返回结果：</font>```a b c```
+
 ```
  x = lambda a, b, c : a + b + c
 print(x(5, 6, 2))
