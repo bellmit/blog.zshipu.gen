@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}zh-CN{{end}}">
+{{ partial "head" . }}
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLWJSST"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    {{ partial "header" . }}
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    {{ block "content" . }}{{ end }}
+                    {{ partial "footer" . }}
+                </div>
+
+                {{ partial "sidebar" . }}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
