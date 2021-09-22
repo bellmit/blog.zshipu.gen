@@ -1,5 +1,5 @@
 {
-  "name": "hexo-site",
+  "name": "top",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "version": "5.2.0"
   },
   "dependencies": {
-    "hexo": "^5.0.0",
+    "hexo": "^5.4.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
@@ -22,5 +22,10 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
