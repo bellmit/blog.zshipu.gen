@@ -124,7 +124,7 @@ _埃德温埃德温 807 九月 7 11：09 .配置文件
 
  ```
  sudo chown -R edwin:edwin /home/edwin
-```
+ ```
 
  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on" _msthidden="1"><title _msthash="1043796" _msttexthash="419224" _msthidden="1">Enter fullscreen mode</title></svg> <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off" _msthidden="1"><title _msthash="1044355" _msttexthash="385177" _msthidden="1">Exit fullscreen mode</title></svg>
 
@@ -170,7 +170,7 @@ eval `ssh-agent -s`
 
  ```
  ssh-add /home/*user*/.ssh/id_rsa_github
-```
+ ```
 
  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on" _msthidden="1"><title _msthash="1045083" _msttexthash="419224" _msthidden="1">Enter fullscreen mode</title></svg> <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off" _msthidden="1"><title _msthash="1045642" _msttexthash="385177" _msthidden="1">Exit fullscreen mode</title></svg>
 
@@ -181,5 +181,4 @@ cat /home/*user*/.ssh/id_rsa_github.pub
 ```
 
  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on" _msthidden="1"><title _msthash="1042795" _msttexthash="419224" _msthidden="1">Enter fullscreen mode</title></svg> <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off" _msthidden="1"><title _msthash="1043354" _msttexthash="385177" _msthidden="1">Exit fullscreen mode</title></svg>
-
 
