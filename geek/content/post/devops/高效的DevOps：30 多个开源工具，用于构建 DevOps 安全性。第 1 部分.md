@@ -3,17 +3,20 @@
 title: 高效的DevOps：30 多个开源工具，用于构建 DevOps 安全性。第 1 部分
 author: 知识铺
 date: 2020-10-13 22:50:06+08:00
+
 tags: [DevOps]
 ---
 <font _mstmutation="1" _msthash="26988" _msttexthash="432076398">新的安全工具没有时间成为快速增长的实践集的一部分，这使我想将某个检查点设置为工具列表。</font>
 
 <font _mstmutation="1" _msthash="28808" _msttexthash="574300584">实践意味着一组措施可以内置到 SDLC/DevOps 的阶段之一（威胁建模、SAST、DAST、SCA、Docker 图像扫描、Kubernetes 扫描、AWS 审核等）。</font>
 
- ![Image for post](https://miro.medium.com/max/60/0*RPwsDSA6nOOOkcn3.png?q=20)
+ 
 
-![Image for post](https://miro.medium.com/max/1980/0*RPwsDSA6nOOOkcn3.png)
+![image-20210930085918331](https://cdn.jsdelivr.net/gh/zshipu/images/202109300859663.png)
 
-<noscript>![Image for post](https://miro.medium.com/max/3960/0*RPwsDSA6nOOOkcn3.png)</noscript>
+
+
+
 
 # <font _mstmutation="1" _msthash="23465" _msttexthash="14705236">1.威胁建模</font>
 
@@ -23,11 +26,9 @@ tags: [DevOps]
 
 <font _mstmutation="1" _msthash="37375" _msttexthash="20454694">**1.1** [**OWASP 威胁龙**](https://zshipu.com/t?url=https://owasp.org/www-project-threat-dragon/)</font>
 
- ![Image for post](https://miro.medium.com/max/60/0*cGawBPFx3IWWFzvJ.png?q=20)
+ ![Image for post](https://miro.medium.com/max/60/0*cGawBPFx3IWWFzvJ.png?q=20)![image-20210930085959579](https://cdn.jsdelivr.net/gh/zshipu/images/202109300900642.png)
 
-![Image for post](https://miro.medium.com/max/1024/0*cGawBPFx3IWWFzvJ.png)
 
-<noscript>![Image for post](https://miro.medium.com/max/2048/0*cGawBPFx3IWWFzvJ.png)</noscript>
 
 <font _mstmutation="1" _msthash="23036" _msttexthash="1781540280">一个非常简单的工具，用于自我建模的威胁。用户绘制软件体系结构，指示可以遵循 STRIDE 方法的威胁。没有自动化，但在经典版本中，当进程被调试时，可能很有用。此工具特别用于对 GitHub 中的威胁进行建模。</font>
 
@@ -35,11 +36,7 @@ tags: [DevOps]
 
 [**1.2 皮特姆**](https://zshipu.com/t?url=https://github.com/izar/pytm)
 
- ![Image for post](https://miro.medium.com/max/60/1*LtKkcEgqaXgSj-OupJ4MXg.png?q=20)
 
-
-
-<noscript>![Image for post](https://miro.medium.com/max/1908/1*LtKkcEgqaXgSj-OupJ4MXg.png)</noscript>
 
 <font _mstmutation="1" _msthash="34762" _msttexthash="1438373105">Pytm 是 Python 上的一个框架，用于创建数据流图和系统威胁列表。Pytm 用户以代码形式在体系结构中定义组件交互模型，然后该工具生成组件交互图本身。它可用于协作和版本跟踪系统。</font>
 
@@ -48,7 +45,7 @@ tags: [DevOps]
 <font _mstmutation="1" _msthash="32981" _msttexthash="1048401666">让我们进入测试阶段，即静态代码分析。有很多代码分析器。反过来，开源工具之所以突出，是因为它们是为特定语言编写的。在以下集合中可以找到大量工具：</font>
 
 > [OWASP 源代码分析工具](https://zshipu.com/t?url=https://owasp.org/www-community/Source_Code_Analysis_Tools)
-> 
+>
 > [静态分析工具](https://zshipu.com/t?url=https://github.com/analysis-tools-dev/static-analysis)
 
 <font _mstmutation="1" _msthash="27456" _msttexthash="112854482">但也有一些相当奇怪的工具，可以普遍使用。</font>
@@ -65,11 +62,11 @@ tags: [DevOps]
 
 [**2.2 移位式扫描**](https://zshipu.com/t?url=https://github.com/ShiftLeftSecurity/sast-scan)
 
- ![Image for post](https://miro.medium.com/max/60/0*qSktJMhQOppVTMpN.png?q=20)
 
-![Image for post](https://miro.medium.com/max/2000/0*qSktJMhQOppVTMpN.png)
 
-<noscript>![Image for post](https://miro.medium.com/max/4000/0*qSktJMhQOppVTMpN.png)</noscript>
+![image-20210930090100695](../../../../../../../images/image-20210930090100695.png)
+
+
 
 <font _mstmutation="1" _msthash="28860" _msttexthash="1735539221">该工具的工作方式与 Salus 类似，但支持更多静态分析器。在存储库中，您可以看到放置在 Docker 映像中的静态分析器（gosec、find-sec 错误、诗篇、土匪、...）。甚至地形、bash、库伯内特清单分析器也被放置在 Docker 映像中。</font>
 
@@ -175,5 +172,4 @@ tags: [DevOps]
 <font _mstmutation="1" _msthash="33241" _msttexthash="92613924">用于应用程序安全性的自动机密检测工具</font>
 
  ![Image for post](https://miro.medium.com/max/60/0*Hg6BixBAEQXh0rat.png?q=20)
-
 
