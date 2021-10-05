@@ -32,13 +32,19 @@ func giveState(g *Game) {
 
 每个细胞在第一代都有1/15的机会活着。Ebiten 的更新功能以 60fps/秒的速度运行，我为每个报价创建新一代。我在左上角打印出当前代号。
 
-[![Generation number](https://res.cloudinary.com/practicaldev/image/fetch/s--0qX4ZI_f--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wu7h9427oyfo18dlziah.png)](https://zshipu.com/t?url=https://res.cloudinary.com/practicaldev/image/fetch/s--0qX4ZI_f--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wu7h9427oyfo18dlziah.png)
+
+
+![Generation number](https://cdn.jsdelivr.net/gh/zshipu/images/202110050818261.png)
 
 细胞吞噬游戏似乎是计算机科学学生的仪式。至少，这就是我从网上学到的。它并没有出现在我的任何类， 所以它的乐趣， 玩它周围， 并阅读人们用它创造的惊人的东西。例如，[具有均匀时间](https://zshipu.com/t?url=https://codegolf.stackexchange.com/a/111932)步数的数字时钟的副本。
 
 ### [](#interaction)<font _mstmutation="1" _msthash="306202" _msttexthash="4031014">互动</font>
 
-[![Interaction GIF](https://res.cloudinary.com/practicaldev/image/fetch/s--3N1C5VYi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/4h0vgbxkspmszb7jlvb7.gif)](https://zshipu.com/t?url=https://res.cloudinary.com/practicaldev/image/fetch/s--3N1C5VYi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/4h0vgbxkspmszb7jlvb7.gif)
+
+
+
+
+![Interaction GIF](https://cdn.jsdelivr.net/gh/zshipu/images/202110050818670.gif)
 
 <font _mstmutation="1" _msthash="290303" _msttexthash="2319385263">如果单击板，附近的单元格会翻转其状态。您可以在屏幕上拖动以使单元格级联。动画模式有一个简单的乐趣。Ebiten 有一个函数用于单击，我在每个更新刻度上调用它。在这里，我们使用多个内联赋值来设置 和 的值。这些变量的类型在编译时推断。</font>```x``````y```
 
@@ -56,7 +62,6 @@ func giveState(g *Game) {
 我还发现VS代码的 Go 插件是令人难以置信的有用， 它执行更有用的行动比我可能知道！这有助于我专注于学习语言。任何人寻找一种方法进入去，我[推荐一个去之旅](https://zshipu.com/t?url=https://tour.golang.org/welcome/1)。除此之外， 谁知道 — — 我自己正在测试一些， 欢迎推荐！
 
 查看我的[GitHub](https://zshipu.com/t?url=https://github.com/healeycodes/conways-game-of-life)上的代码。
-
 
 
 

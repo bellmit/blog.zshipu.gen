@@ -16,21 +16,21 @@ tags: [golang]
 
 <font _mstmutation="1" _msthash="24414" _msttexthash="901021823">我的 go 工作区将转到二进制文件以及我的个人项目分开。在我看来，这让工作空间变得不那么杂乱无章。我们将利用 GOPATH 环境变量来形成这样的工作区。</font>
 
- ![Image for post](https://miro.medium.com/max/60/1*c7FoVlYt3KUGLhYO8898JQ.png?q=20)
 
-![Image for post](https://miro.medium.com/max/472/1*c7FoVlYt3KUGLhYO8898JQ.png)
 
-<noscript>![Image for post](https://miro.medium.com/max/944/1*c7FoVlYt3KUGLhYO8898JQ.png)</noscript>
+![image-20211005082249193](https://cdn.jsdelivr.net/gh/zshipu/images/202110050822543.png)
+
+
 
 <font _mstmutation="1" _msthash="35256" _msttexthash="329389970">如上图所示，go 库/二进制文件存储在 golib 文件夹中，而我们的个人项目将存储在 goCode 中。</font>
 
 <font _mstmutation="1" _msthash="22490" _msttexthash="466665030">现在，让我们看看 goCode 文件夹。它由一个 go-microservices 目录组成，该目录以相同的名称推送在 git 上。</font>
 
- ![Image for post](https://miro.medium.com/max/48/1*C0G8_to0VDv1gD_ADJzHnQ.png?q=20)
 
-![Image for post](https://miro.medium.com/max/295/1*C0G8_to0VDv1gD_ADJzHnQ.png)
 
-<noscript>![Image for post](https://miro.medium.com/max/590/1*C0G8_to0VDv1gD_ADJzHnQ.png)</noscript>
+![image-20211005082324707](https://cdn.jsdelivr.net/gh/zshipu/images/202110050823288.png)
+
+
 
 <font _mstmutation="1" _msthash="28444" _msttexthash="297809564">它包含一个 main.go 文件和一个名为处理程序的文件夹。我们有我们的 gitgnore 和 README.md GitHub 的一个。</font>
 
@@ -161,5 +161,4 @@ func NewHello(l *log.Logger) *Hello {
 *   <font _mstmutation="1" _msthash="32136" _msttexthash="68295487">Golang的自由代码营地教程： [https://www.youtube.com/watch?v=YS4e4q9oBaU&ab_channel=freeCodeCamp.org](https://zshipu.com/t?url=https://www.youtube.com/watch?v=YS4e4q9oBaU&ab_channel=freeCodeCamp.org)</font>
 *   <font _mstmutation="1" _msthash="27924" _msttexthash="42324373">Golang的服务器文档： [https://golang.org/src/net/http/server.go](https://zshipu.com/t?url=https://golang.org/src/net/http/server.go)</font>
 *   <font _mstmutation="1" _msthash="27794" _msttexthash="19986109">服务器Mux： [https://golang.org/pkg/net/http/#ServeMux](https://zshipu.com/t?url=https://golang.org/pkg/net/http/#ServeMux)</font>
-
 

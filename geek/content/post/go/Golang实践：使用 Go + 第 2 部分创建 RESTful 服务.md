@@ -29,11 +29,11 @@ tags: [golang]
 
 <font _mstmutation="1" _msthash="26988" _msttexthash="3474171961">在上一个博客中，我们添加了两个名为"你好"和"再见"的新处理程序。我们不再需要这些了， 所以我们删除了它们。相反，我们创建一个名为**产品的新处理程序**。我们将通过此处理程序执行 CRUD 操作。由于我们正在创建一个咖啡店，我们需要一个数据存储，存储我们的产品。**Product.go**将存储要存储的产品字段作为 go 结构。</font>
 
- ![Image for post](https://miro.medium.com/max/46/1*kxSW-aPMWwR4GvxbbwjaEg.png?q=20)
 
-![Image for post](https://miro.medium.com/max/243/1*kxSW-aPMWwR4GvxbbwjaEg.png)
 
-<noscript>![Image for post](https://miro.medium.com/max/486/1*kxSW-aPMWwR4GvxbbwjaEg.png)</noscript>
+![image-20211005082401040](https://cdn.jsdelivr.net/gh/zshipu/images/202110050824634.png)
+
+
 
 # <font _mstmutation="1" _msthash="32955" _msttexthash="41634892">产品处理程序和数据存储</font>
 
@@ -372,5 +372,4 @@ func UpdateProduct(id int, p *Product) error {
     "price": 10
   }
 ]
-
 
