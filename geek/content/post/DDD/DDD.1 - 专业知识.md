@@ -1,5 +1,5 @@
 ---
-title: DDD.1 - 紧缩知识
+title: DDD.1 - 专业知识
 author: 知识铺
 date: 2021-10-06 10:41:10
 tags: [DDD]
