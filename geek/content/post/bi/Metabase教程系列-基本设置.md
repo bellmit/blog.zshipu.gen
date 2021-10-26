@@ -1,5 +1,5 @@
 ---
-title: Metabase使用教程
+title: Metabase教程系列-基本设置
 date: 2021-10-20 18:00:00
 tags: [BI]
 ---
