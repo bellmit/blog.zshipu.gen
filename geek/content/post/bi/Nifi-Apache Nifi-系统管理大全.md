@@ -17,10 +17,10 @@ Apache NiFi 可以在笔记本电脑这样简单的东西上运行，但它也�
   - Windows
   - macOS
 - 支持的 Web 浏览器：
-  - 微软边缘： 电流 + （当前 - 1）
-  - 莫齐拉火狐： 电流 + （当前 - 1）
-  - 谷歌浏览器： 当前 + （当前 - 1）
-  - 野生动物园： 电流 + （当前 - 1）
+  - Microsoft Edge： Current + （Current - 1）
+  - Mozilla FireFox： Current + （Current - 1）
+  - Google Chrome： Current + （Current - 1）
+  - Safari： Current + （Current - 1）
 
 |      | 在持续和极高的吞吐量下，可能需要调整 CodeCache 设置以避免突然的性能损失。有关更多信息，请参阅[引导属性](http://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#bootstrap_properties)部分。 |
 | ---- | ------------------------------------------------------------ |
@@ -35,7 +35,7 @@ Apache NiFi 可以在笔记本电脑这样简单的东西上运行，但它也�
   - 从目录中，通过键入执行以下命令：`<installdir>/bin``./nifi.sh <command>`
     - `start`： 在后台启动 NiFi
     - `stop`： 停止在后台运行的 Nifi
-    - `status`： 提供 NiFi 的当前状态
+    - `status`： 提供 NiFi 的Current状态
     - `run`： 在前景中运行 Nifi， 并等待 Ctrl - c 启动 Nifi 的关闭
     - `install`： 安装 NiFi 作为一项服务， 然后可以通过
       - `service nifi start`
@@ -47,7 +47,7 @@ Apache NiFi 可以在笔记本电脑这样简单的东西上运行，但它也�
     - 至少，我们建议编辑*nifi.属性*文件并输入密码（参见下面[的系统属性](http://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#system_properties)）`nifi.sensitive.props.key`
   - 导航到目录`<installdir>/bin`
   - 双击。这运行 NiFi 的前景， 并等待 Ctrl - c 启动关闭 Nifi`run-nifi.bat`
-  - 要查看 NiFi 的当前状态，请双击`status-nifi.bat`
+  - 要查看 NiFi 的Current状态，请双击`status-nifi.bat`
 
 当 NiFi 首次启动时，创建以下文件和目录：
 
@@ -1216,7 +1216,7 @@ cn=nifi-2,ou=people,dc=example,dc=com
 
 您可以覆盖继承的策略（如下[所示，请转动处理器](http://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#moving-a-processor)示例）。覆盖策略会删除继承的政策，打破从父母到孩子的继承链，并创建一个替换策略，根据需要添加用户。可以通过删除替换策略来恢复继承的策略及其用户。
 
-|      | "查看策略"和"修改策略"组件级别的访问策略是此继承行为的例外。当用户被添加到任一策略中时，它们被添加到当前管理员列表中。它们不会凌驾于上级管理员的统治下。因此，仅显示"查看策略"和"修改策略"访问策略的组件特定管理员。 |
+|      | "查看策略"和"修改策略"组件级别的访问策略是此继承行为的例外。当用户被添加到任一策略中时，它们被添加到Current管理员列表中。它们不会凌驾于上级管理员的统治下。因此，仅显示"查看策略"和"修改策略"访问策略的组件特定管理员。 |
 | ---- | ------------------------------------------------------------ |
 |      |                                                              |
 
@@ -1248,7 +1248,7 @@ cn=nifi-2,ou=people,dc=example,dc=com
 
 ![User1 Full Access](https://cdn.jsdelivr.net/gh/zshipu/images/202111011331147.png)
 
-用户 1 希望保持其当前对数据流及其组件的特权。
+用户 1 希望保持其Current对数据流及其组件的特权。
 
 用户 2 无法将组件添加到数据流中，也无法移动、编辑或连接组件。根过程组和处理器的详细信息和属性隐藏在用户 2 中。
 
@@ -1601,7 +1601,7 @@ NiFi 支持多个配置选项，使用 AES 加卢瓦/计数器模式 （AES-GCM�
 
 NiFi 采用零领导聚类范式。集群中的每个节点具有相同的流，并在数据上执行相同的任务，但每个节点都基于不同的数据集工作。集群自动将数据分布到所有活动节点。
 
-其中一个节点自动选择（通过阿帕奇ZooKeeper）作为集群协调员。然后，组中的所有节点都将向此节点发送心跳/状态信息，此节点负责断开在一段时间内不报告任何心跳状态的节点。此外，当新节点选择加入集群时，新节点必须首先连接到当前选出的集群协调员，以便获得最新的流量。如果集合协调员确定允许节点连接（基于其配置的防火墙文件），则向该节点提供当前流量，并且该节点能够加入该节点，前提是节点的流副本与集合协调员提供的副本相匹配。如果节点的流配置版本与集束协调员的版本不同，则节点将不会加入组集。
+其中一个节点自动选择（通过阿帕奇ZooKeeper）作为集群协调员。然后，组中的所有节点都将向此节点发送心跳/状态信息，此节点负责断开在一段时间内不报告任何心跳状态的节点。此外，当新节点选择加入集群时，新节点必须首先连接到Current选出的集群协调员，以便获得最新的流量。如果集合协调员确定允许节点连接（基于其配置的防火墙文件），则向该节点提供Current流量，并且该节点能够加入该节点，前提是节点的流副本与集合协调员提供的副本相匹配。如果节点的流配置版本与集束协调员的版本不同，则节点将不会加入组集。
 
 ### 为什么是集群？
 
@@ -1615,13 +1615,13 @@ NiFi 聚类是独一无二的，并有自己的术语。在设置集群之前，
 
 **节点**：每个星团由一个或多个节点组成。节点进行实际数据处理。
 
-**主节点**：每个组都有一个主节点。在此节点上，可以运行"隔离处理器"（见下文）。ZooKeeper用于自动选择主节点。如果该节点因任何原因与组断开，则将自动选择新的主节点。用户可以通过查看用户界面的群集管理页面来确定当前选择哪个节点为主要节点。
+**主节点**：每个组都有一个主节点。在此节点上，可以运行"隔离处理器"（见下文）。ZooKeeper用于自动选择主节点。如果该节点因任何原因与组断开，则将自动选择新的主节点。用户可以通过查看用户界面的群集管理页面来确定Current选择哪个节点为主要节点。
 
 ![Primary Node in Cluster Management UI](https://cdn.jsdelivr.net/gh/zshipu/images/202111011335657.png)
 
 **隔离处理器**：在 NiFi 聚类中，所有节点上都运行相同的数据流。因此，流中的每个组件都运行在每个节点上。但是，在某些情况下，DFM 不希望每个处理器在每个节点上运行。最常见的情况是使用处理器使用规模不好的协议与外部服务进行通信时。例如，GetSFTP 处理器从远程目录中取出。如果 GetSFTP 处理器在集群的每个节点上运行，并尝试同时从同一个远程目录中拉出，则可能会有比赛条件。因此，DFM 可以在主节点上配置 GetSFTP 以隔离运行，这意味着它仅在该节点上运行。有了适当的数据流配置，它可以在组集的其他节点中拉入数据并加载平衡数据。请注意，虽然此功能存在，但使用独立的 NiFi 实例来拉取数据并将其馈送至集群也很常见。这仅取决于可用资源以及管理员如何决定配置集群。
 
-**心跳**：节点通过"心跳"向当前选出的集群协调员传达其健康状况和状态，让协调员知道他们仍然连接到集群并正常工作。默认情况下，节点每 5 秒发出一次心跳，如果群集协调员在 40 秒内（+ 5 秒 = 8）内未收到节点的心跳，则会因"心跳不足"而断开节点。5 秒和 8 倍设置可在*nifi.属性*文件中进行配置（有关更多信息，请参阅[聚类常见属性](http://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#cluster_common_properties)部分）。群集协调员断开节点的原因是协调员需要确保组中的每个节点是同步的，如果没有定期听到节点的声音，协调员无法确定它仍然与组集的其他节点同步。如果节点在 40 秒后发送新的心跳，协调员将自动请求节点重新加入组集，以包括节点流量的重新验证。由于心跳不足而断开和收到心跳后重新连接均报告给用户界面中的 DFM。
+**心跳**：节点通过"心跳"向Current选出的集群协调员传达其健康状况和状态，让协调员知道他们仍然连接到集群并正常工作。默认情况下，节点每 5 秒发出一次心跳，如果群集协调员在 40 秒内（+ 5 秒 = 8）内未收到节点的心跳，则会因"心跳不足"而断开节点。5 秒和 8 倍设置可在*nifi.属性*文件中进行配置（有关更多信息，请参阅[聚类常见属性](http://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#cluster_common_properties)部分）。群集协调员断开节点的原因是协调员需要确保组中的每个节点是同步的，如果没有定期听到节点的声音，协调员无法确定它仍然与组集的其他节点同步。如果节点在 40 秒后发送新的心跳，协调员将自动请求节点重新加入组集，以包括节点流量的重新验证。由于心跳不足而断开和收到心跳后重新连接均报告给用户界面中的 DFM。
 
 ### 集群内的通信
 
@@ -1687,7 +1687,7 @@ DFM 可能会手动断开与组集集的节点。节点也可能因为其他原�
 
 任何数据流、用户、组和策略与当选者发生冲突的节点都将备份任何相互冲突的资源，并将本地资源替换为聚类资源。备份的执行方式取决于配置的访问策略提供商和用户组提供商。对于基于文件的访问策略提供商，备份将写入与现有文件相同的目录（例如，$NIFI_HOME/conf），并带有相同的名称，但带有""的后缀和时间戳。例如，如果流本身在 2020 年 1 月 1 日 12：05：03 与聚类流冲突，则节点的文件将被复制到该组，然后将组集合的流量写入。同样，这将发生在文件和文件。这样做是为了在必要时将备份文件重命名为"例如"手动恢复流量。`flow.xml.gz``flow.xml.gz.2020-01-01-12-05-03``flow.xml.gz``users.xml``authorizations.xml``flow.xml.gz`
 
-请务必注意，在继承所选流量之前，NiFi 将首先阅读 FlowFile 存储库和任何交换文件，以确定数据流中的哪些队列当前包含数据。如果数据流中存在包含 FlowFile 的任何队列，则该队列也必须存在于选定的数据流中。如果该队列在选选出的数据流中不存在，则节点将不会继承数据流、用户、组和策略。相反，NiFi 将记录错误，并且无法启动。这可确保即使节点中存储的数据与集群的数据流不同，重新启动节点也不会导致数据丢失。
+请务必注意，在继承所选流量之前，NiFi 将首先阅读 FlowFile 存储库和任何交换文件，以确定数据流中的哪些队列Current包含数据。如果数据流中存在包含 FlowFile 的任何队列，则该队列也必须存在于选定的数据流中。如果该队列在选选出的数据流中不存在，则节点将不会继承数据流、用户、组和策略。相反，NiFi 将记录错误，并且无法启动。这可确保即使节点中存储的数据与集群的数据流不同，重新启动节点也不会导致数据丢失。
 
 选举是按照"民众投票"进行的，并警告说，除非所有选举都是空的，否则获胜者永远不会是"空流"。这允许管理员删除节点的*流.xml.gz*文件并重新启动节点，因为知道除非没有发现其他流，否则节点的流量不会被投票选为"正确"流。如果有两个非空流获得相同票数，则将选择其中一个流。用于确定这些流量中哪些流量的方法尚未确定，并且可能随时在不通知的情况下更改。
 
@@ -1748,7 +1748,7 @@ NiFi 为处理器、报告任务、控制器服务以及持续状态的框架本
 
 在向ZooKeeper添加数据时，访问控制有两个选项：和 。如果该属性被设置为，那么任何人都可以登录 ZooKeeper，并拥有查看、更改、删除或管理数据的完整权限。如果指定，则只允许创建数据的用户读取、更改、删除或管理数据。为了使用该选项，NiFi 必须提供某种形式的身份验证。有关如何配置身份验证的更多信息，请参阅下面的[ZooKeeper访问控制](http://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#zk_access_control)部分。`Open``CreatorOnly``Access Control``Open``CreatorOnly``CreatorOnly`
 
-如果 NiFi 被配置为以独立模式运行，则该元素无需在*国家管理.xml*文件中填充，如果填充，则实际上将予以忽略。但是，该元素必须始终存在并填充。此外，如果 NiFi 在群集中运行，则每个节点还必须具有当前和正确配置的元素。否则，NiFi 将无法启动。`cluster-provider``local-provider``cluster-provider`
+如果 NiFi 被配置为以独立模式运行，则该元素无需在*国家管理.xml*文件中填充，如果填充，则实际上将予以忽略。但是，该元素必须始终存在并填充。此外，如果 NiFi 在群集中运行，则每个节点还必须具有Current和正确配置的元素。否则，NiFi 将无法启动。`cluster-provider``local-provider``cluster-provider`
 
 虽然这些提供商需要配置的属性并不多，但它们被外部化为单独*的国家管理.xml*文件，而不是通过*nifi.属性*文件进行配置，仅仅是因为不同的实现可能需要不同的属性，并且比将提供商的属性与所有其他 NiFi 框架特定的道具混合在一起要容易得多瑞斯
 
@@ -1829,7 +1829,7 @@ kadmin: addprinc "zookeeper/myHost.example.com@EXAMPLE.COM"
 kadmin: xst -k zookeeper-server.keytab zookeeper/myHost.example.com@EXAMPLE.COM
 ```
 
-这将创建当前目录中指定的文件。我们现在可以将该文件复制到目录中。我们应该确保只有运行 NiFi 的用户才能阅读此文件。`zookeeper-server.keytab``$NIFI_HOME/conf/`
+这将创建Current目录中指定的文件。我们现在可以将该文件复制到目录中。我们应该确保只有运行 NiFi 的用户才能阅读此文件。`zookeeper-server.keytab``$NIFI_HOME/conf/`
 
 我们需要重复上述步骤的NiFi的每一个实例，将运行嵌入式动物园守护者服务器，一定要替换，或任何完全合格的主机名动物园守护者服务器将运行。`myHost.example.com``myHost2.example.com`
 
@@ -1895,7 +1895,7 @@ kadmin: xst -k nifi.keytab nifi@EXAMPLE.COM
 
 此键盘文件可以复制到其他带有嵌入式ZooKeeper服务器的 NiFi 节点。
 
-这将创建一个名为*nifi.keytab*的当前目录中的文件。我们现在可以将该文件复制到目录中。我们应该确保只有运行 NiFi 的用户才能阅读此文件。`$NIFI_HOME/conf/`
+这将创建一个名为*nifi.keytab*的Current目录中的文件。我们现在可以将该文件复制到目录中。我们应该确保只有运行 NiFi 的用户才能阅读此文件。`$NIFI_HOME/conf/`
 
 接下来，我们需要配置 NiFi 来使用此 KeyTab 进行身份验证。由于ZooKeeper使用 Java 认证和授权服务 （JAAS），我们需要创建一个 JAAS 兼容的文件。在目录中，创建一个名为*ZooKeeper-jaas.conf*的文件，并添加到它下面的片段：`$NIFI_HOME/conf/`
 
@@ -2214,10 +2214,10 @@ NiFi 在默认情况下使用模型的 R 方形分数在发送预测信息之前
 
 | **财产**                                           | **描述**                                                     |
 | -------------------------------------------------- | ------------------------------------------------------------ |
-| `nifi.flow.configuration.file`*                    | 流配置文件的位置（即包含当前在 NiFi 图上显示的内容的文件）。默认值是 。`./conf/flow.xml.gz` |
+| `nifi.flow.configuration.file`*                    | 流配置文件的位置（即包含Current在 NiFi 图上显示的内容的文件）。默认值是 。`./conf/flow.xml.gz` |
 | `nifi.flow.configuration.archive.enabled`*         | 指定 NiFi 在更新流量时是否自动创建流量的备份副本。默认值是 。`true` |
 | `nifi.flow.configuration.archive.dir`*             | 保存流的备份副本的存档目录的位置*.xml。*默认值是 。NiFi 删除旧存档文件，以根据存档文件的使用寿命、总大小和文件数量（分别指定）和属性来限制磁盘使用。如果没有指定这些存档限制，NiFi 使用默认条件，即用于和用于。 此清理机制仅考虑自动创建存档*流.xml*文件。如果此存档目录中还有其他文件或目录，NiFi 将忽略它们。自动创建的档案有文件名与ISO 8601格式时间戳前缀后。那是。例如。NiFi 在清理存档目录时检查文件名。如果您想在此目录中保留特定存档，而不必担心 NiFi 删除它，则可以通过使用不同的文件名模式复制它来这样做。`./conf/archive``nifi.flow.configuration.archive.max.time``max.storage``max.count``30 days``max.time``500 MB``max.storage``<original-filename>``<year><month><day>T<hour><minute><second>+<timezone offset>_<original filename>``20160706T160719+0900_flow.xml.gz` |
-| `nifi.flow.configuration.archive.max.time`*        | 存档*流.xml文件的*寿命。NiFi 将在更新流时删除过期的存档文件*.xml*如果指定此属性。到期日根据当前系统时间和存档流的最后修改时间戳*确定.xml。*如果*nifi.属性*中没有指定存档限制，NiFi 会删除比。`30 days` |
+| `nifi.flow.configuration.archive.max.time`*        | 存档*流.xml文件的*寿命。NiFi 将在更新流时删除过期的存档文件*.xml*如果指定此属性。到期日根据Current系统时间和存档流的最后修改时间戳*确定.xml。*如果*nifi.属性*中没有指定存档限制，NiFi 会删除比。`30 days` |
 | `nifi.flow.configuration.archive.max.storage`*     | 存档*流.xml*文件允许的总数据大小。NiFi 将删除最古老的存档文件，直到总存档文件大小小于此配置值（如果指定此属性）。如果*nifi.属性*中没有指定存档限制，NiFi 将对此进行使用。`500 MB` |
 | `nifi.flow.configuration.archive.max.count`*       | 允许的存档文件数量。NiFi 将删除最古老的存档文件，以便在指定此属性时只能保留 N 最新档案。 |
 | `nifi.flowcontroller.autoResumeState`              | 指示 NiFi 图上的组件是否应恢复到其最后状态。默认值是 。`true` |
@@ -2260,13 +2260,13 @@ H2 设置部分定义了 H2 数据库的设置，该数据库跟踪用户访问�
 
 ### 流文件存储库
 
-FlowFile 存储库跟踪系统中每个 FlowFile 的属性和当前状态。默认情况下，此存储库与所有其他存储库安装在同一根安装目录中：但是，如果可用，建议将其配置在单独的驱动器上。
+FlowFile 存储库跟踪系统中每个 FlowFile 的属性和Current状态。默认情况下，此存储库与所有其他存储库安装在同一根安装目录中：但是，如果可用，建议将其配置在单独的驱动器上。
 
 目前，流程文件存储库有三个实施，详情如下。
 
 | **财产**                                  | **描述**                                                     |
 | ----------------------------------------- | ------------------------------------------------------------ |
-| `nifi.flowfile.repository.implementation` | 流文件存储库实现。默认值是 。其他当前选项是和 。`org.apache.nifi.controller.repository.WriteAheadFlowFileRepository``org.apache.nifi.controller.repository.VolatileFlowFileRepository``org.apache.nifi.controller.repository.RocksDBFlowFileRepository` |
+| `nifi.flowfile.repository.implementation` | 流文件存储库实现。默认值是 。其他Current选项是和 。`org.apache.nifi.controller.repository.WriteAheadFlowFileRepository``org.apache.nifi.controller.repository.VolatileFlowFileRepository``org.apache.nifi.controller.repository.RocksDBFlowFileRepository` |
 
 |      | 切换存储库实现只能在没有排队流量文件的情况下执行，并且只应谨慎执行。 |
 | ---- | ------------------------------------------------------------ |
@@ -2558,7 +2558,7 @@ nifi.provenance.repository.implementation=org.apache.nifi.provenance.EncryptedWr
 | `s2s.{source|target}.port`     | 与上述情况相同，用于端口。源端口可能没有用处，因为它只是一个客户端端端口 TCP 端口。 |
 | `s2s.{source|target}.secure`   | 与上述相同，无论是否安全。                                   |
 | `s2s.protocol`                 | 正在使用的站点到站点协议的名称，或 。`RAW``HTTP`             |
-| `s2s.request`                  | 当前请求类型的名称，或 。有关详细信息，请参阅下面的站点到站点协议序列。`SiteToSiteDetail``Peers` |
+| `s2s.request`                  | Current请求类型的名称，或 。有关详细信息，请参阅下面的站点到站点协议序列。`SiteToSiteDetail``Peers` |
 | `HTTP request headers`         | HTTP 请求头值可以按其名称转介。                              |
 
 #### 站点到站点协议序列
@@ -3064,7 +3064,7 @@ NiFi 依靠阿帕奇ZooKeeper来确定集群中的哪个节点应发挥主节点
 
 当在*nifi.属性*中设置值时，指定的密钥用于加密流中的敏感属性（例如组件中的密码字段）。如果密钥需要更改，NiFi 工具包中的加密配置工具可以迁移敏感属性密钥并更新*流量.xml.gz。*具体来说，加密配置：`nifi.sensitive.props.key`
 
-1. 读取现有*流量.xml.gz*并使用当前密钥解密敏感值。
+1. 读取现有*流量.xml.gz*并使用Current密钥解密敏感值。
 2. 用指定的新密钥加密所有敏感值。
 3. 更新*nifi.属性*和*流.xml.gz*文件或创建新版本的文件。
 

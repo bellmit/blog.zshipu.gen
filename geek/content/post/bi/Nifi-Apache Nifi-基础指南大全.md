@@ -14,12 +14,12 @@ Apache NiFi 是基于基于流量编程概念的数据流系统。它支持数�
 
 | 浏览器     | 版本           |
 | :--------- | :------------- |
-| 铬         | 当前和当前 - 1 |
-| 火狐       | 当前和当前 - 1 |
-| 边缘       | 当前和当前 - 1 |
-| 野生动物园 | 当前和当前 - 1 |
+| Chrome         | Current and Current - 1 |
+| FireFox       | Current and Current - 1 |
+| Edge       | Current and Current - 1 |
+| Safari | Current and Current - 1 |
 
-当前和当前 - 1 表示该浏览器和前一个浏览器当前稳定版本中支持 UI。例如，如果当前的稳定版本为 45.X，则官方支持的版本将是 45.X 和 44.X。
+Current and Current - 1 表示该浏览器和前一个浏览器当前稳定版本中支持 UI。例如，如果当前的稳定版本为 45.X，则官方支持的版本将是 45.X 和 44.X。
 
 对于 Safari，它发布主要版本的频率要低得多，当前版本和当前 - 1 仅表示两个最新版本。
 
@@ -69,7 +69,7 @@ Apache NiFi 是基于基于流量编程概念的数据流系统。它支持数�
 
 **流**.xml.gz：DFM 放在 NiFi 用户界面画布上的所有内容都实时写在一个称为*流的文件中.xml.gz。*默认情况下，此文件位于目录中。画布上所做的任何更改都会自动保存到此文件中，而用户无需单击"保存"按钮。此外，NiFi 在更新时会自动在存档目录中创建此文件的备份副本。您可以使用这些存档文件来回滚流量配置。为此，停止 NiFi，替换*流.xml.gz*所需的备份副本，然后重新启动 NiFi。在聚类环境中，停止整个 NiFi 聚类，替换其中一个节点*的流.xml.gz，*并重新启动节点。从其他节点中取出*流量.xml.gz。*确认节点以单节点组开始后，启动其他节点。替换的流量配置将在整个集群中同步。*流.xml.gz*和自动存档行为的名称和位置是可配置的。有关详细信息，请参阅[系统管理员指南](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#core-properties-br)。`nifi/conf`
 
-## 尼菲用户界面
+## NIFI用户界面
 
 NiFi UI 提供创建自动数据流的机制，以及可视化、编辑、监控和管理这些数据流。UI 可分为多个细分市场，每个细分市场负责应用程序的不同功能。此部分提供应用程序的屏幕截图，并突出显示 UI 的不同部分。稍后在文档中详细讨论了每个部分。
 
@@ -77,7 +77,7 @@ NiFi UI 提供创建自动数据流的机制，以及可视化、编辑、监控
 
 当 DFM 首次导航到 UI 时，会提供一张空白画布，用于构建数据流：
 
-![尼菲组件工具栏](https://nifi.apache.org/docs/nifi-docs/html/images/nifi-toolbar-components.png)
+![NIFI组件工具栏](https://nifi.apache.org/docs/nifi-docs/html/images/nifi-toolbar-components.png)
 
 组件工具栏穿过屏幕的左上半部分。它由可以拖动到画布上的组件组成，以构建您的数据流。在[构建数据流](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#building-dataflow)时，每个组件都进行了更详细的描述。
 
@@ -87,11 +87,11 @@ NiFi UI 提供创建自动数据流的机制，以及可视化、编辑、监控
 
 画布的右侧是搜索和全球菜单。有关搜索的更多信息，请参阅[数据流中的搜索组件](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#search)。"全球菜单"包含允许您操作画布上现有组件的选项：
 
-![尼菲全球菜单](https://nifi.apache.org/docs/nifi-docs/html/images/global-menu.png)
+![NIFI全球菜单](https://nifi.apache.org/docs/nifi-docs/html/images/global-menu.png)
 
 此外，UI 还具有一些功能，让您能够轻松地在画布周围导航。您可以使用导航调色板在画布周围平移，并放大和缩小。数据流的"鸟瞰图"提供了数据流的高级别视图，并允许您平移数据流的很大一部分。您还可以在屏幕底部找到面包屑。当您导航到和离开流程组时，面包屑显示流中的深度，以及您输入的每个流程组以达到此深度。面包屑中列出的每个流程组都是一个链接，将带您回到流中的水平。
 
-![尼菲导航](https://nifi.apache.org/docs/nifi-docs/html/images/nifi-navigation.png)
+![NIFI导航](https://nifi.apache.org/docs/nifi-docs/html/images/nifi-navigation.png)
 
 ## 通过多租户授权访问 UI
 
@@ -221,7 +221,7 @@ DFM 能够使用 NiFi UI 构建自动数据流。只需将组件从工具栏拖�
 - **查看连接→**：此选项允许用户查看并跳转正在退出流程组的下游连接。
 - **中心视图**：此选项将画布的视图集中在给定过程组上。
 - **组**：此选项允许用户创建包含选定流程组和画布上选定的任何其他组件的新流程组。
-- **下载流量定义**：此选项允许用户下载流程组的流量定义作为 JSON 文件。该文件可以用作备份或导入到[尼菲注册处](https://nifi.apache.org/registry.html)使用[NiFi CLI。](https://nifi.apache.org/docs/nifi-docs/html/toolkit-guide.html#nifi_CLI)（注：如果为版本化过程组选择"下载流量定义"，则下载中没有版本信息。换句话说，无论流程组是否被修改，JSON 文件的生成内容都是相同的。
+- **下载流量定义**：此选项允许用户下载流程组的流量定义作为 JSON 文件。该文件可以用作备份或导入到[NIFI注册处](https://nifi.apache.org/registry.html)使用[NiFi CLI。](https://nifi.apache.org/docs/nifi-docs/html/toolkit-guide.html#nifi_CLI)（注：如果为版本化过程组选择"下载流量定义"，则下载中没有版本信息。换句话说，无论流程组是否被修改，JSON 文件的生成内容都是相同的。
 - **创建模板**：此选项允许用户从选定的进程组创建模板。
 - **复制**：此选项将选定过程组的副本放在剪贴板上，以便通过右键单击画布并选择粘贴，将其粘贴在画布上的其他地方。复制/粘贴操作也可以使用键击 Ctrl-C （命令-C） 和 Ctrl-V （命令-V） 完成。
 - **清空所有队列**：此选项允许用户清空所选过程组中的所有队列。请求时等待的所有连接中的所有流文件将被删除。
@@ -1103,7 +1103,7 @@ NiFi 为背压提供了两个配置元素。这些阈值表示在连接源的组
 
 要查看数据在集束节点中分布的位置，请从"全球菜单"中选择摘要。然后为源选择"连接"选项卡和"查看连接详细信息"图标：
 
-![尼菲摘要连接](https://nifi.apache.org/docs/nifi-docs/html/images/summary_connections.png)
+![NIFI摘要连接](https://nifi.apache.org/docs/nifi-docs/html/images/summary_connections.png)
 
 这将打开集束连接摘要对话，该对话显示集群中每个节点上的数据：
 
@@ -1197,7 +1197,7 @@ NiFi 实例可以是站点到站点协议的客户端和服务器，但是，它
 - 推送：客户端*子将数据发送*到远程处理组，服务器使用输入端口*接收*数据
 - 拉拔：客户端子从远程处理组*接收*数据，服务器通过输出端口*发送*数据
 
-#### 配置站点到站点客户端尼菲实例
+#### 配置站点到站点客户端NIFI实例
 
 **远程进程组**：为了通过站点到站点与远程 NiFi 实例进行通信，只需将[远程处理组](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#remote_process_group)拖动到画布上并输入远程 NiFi 实例的 URL（有关远程过程组组组的更多信息，请参阅本指南的[远程处理组传输](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Remote_Group_Transmission)部分）网址是用于该实例的用户界面或在聚类（集束节点的网址）时使用的相同 URL。此时，您可以拖动连接到或从远程处理组，就像拖动连接到或从处理器或本地进程组一样。拖动连接时，您将有机会选择要连接到哪个端口。请注意，远程处理组可能需要长达一分钟的时间才能确定哪些端口可用。
 
@@ -1782,11 +1782,11 @@ NiFi 提供了有关画布上每个处理器的大量信息。下图显示了处
 
 NiFi 实例具有参数上下文，也命名为"PC1"，具有以下参数：
 
-![尼菲 PC1 参数](https://nifi.apache.org/docs/nifi-docs/html/images/nifi_pc1_parameters.png)
+![NIFI PC1 参数](https://nifi.apache.org/docs/nifi-docs/html/images/nifi_pc1_parameters.png)
 
 版本流导入到 NiFi 实例中。参数上下文"PC1"现在有以下参数：
 
-![新尼菲 PC1 参数](https://nifi.apache.org/docs/nifi-docs/html/images/nifi_pc1_parameters_new.png)
+![新NIFI PC1 参数](https://nifi.apache.org/docs/nifi-docs/html/images/nifi_pc1_parameters_new.png)
 
 "字母"参数在 NiFi 实例中不存在，并且已添加。"数字"参数存在于具有相同值的版本流和 NiFi 实例中，因此未进行更改。"密码"是 NiFi 实例中缺少的敏感参数，因此它被添加但无价值。"端口"存在于 NiFi 实例中，其值与版本流不同，因此其值保持不变。
 
@@ -2184,7 +2184,7 @@ key5=c6FzfnKm7UR7xqI2NFpZ+fEKBfSU7+1NvRw+XWQ9U39MONWqk5gvoyOCdFR1kUgeg46jrN5dGXk
 
 以下配置属性支持使用带有秘密密钥的 PKCS12 钥匙店：
 
-...尼菲. 证明. 存储. 加密.key. 提供商. 实施 = org. apache. nifi. 安全. kms. 关键商店提供者 nifi. 证明. 存储器. 加密.key. 提供商. 位置 \./conf/存储.p12 尼菲.证明.存储.加密.key.提供商.密码=KEYSTORE_PASSWORD尼菲.证明.存储.加密.key.id]主键...
+...NIFI. 证明. 存储. 加密.key. 提供商. 实施 = org. apache. nifi. 安全. kms. 关键商店提供者 nifi. 证明. 存储器. 加密.key. 提供商. 位置 \./conf/存储.p12 NIFI.证明.存储.加密.key.提供商.密码=KEYSTORE_PASSWORDNIFI.证明.存储.加密.key.id]主键...
 
 ##### 键旋转
 
@@ -2282,7 +2282,7 @@ key5=c6FzfnKm7UR7xqI2NFpZ+fEKBfSU7+1NvRw+XWQ9U39MONWqk5gvoyOCdFR1kUgeg46jrN5dGXk
 
 以下配置属性支持使用带有秘密密钥的 PKCS12 钥匙店：
 
-...尼菲. 内容. 存储. 加密.key. 提供商. 实施 = org. apache. nifi. 安全. kms. 关键商店提供尼菲. 内容. 存储器. 加密.key. 提供商. 位置] ./conf/存储.p12 尼菲.内容.存储.加密.key.提供商.密码=KEYSTORE_PASSWORD尼菲.内容.存储.加密.key.id]主键...
+...NIFI. 内容. 存储. 加密.key. 提供商. 实施 = org. apache. nifi. 安全. kms. 关键商店提供NIFI. 内容. 存储器. 加密.key. 提供商. 位置] ./conf/存储.p12 NIFI.内容.存储.加密.key.提供商.密码=KEYSTORE_PASSWORDNIFI.内容.存储.加密.key.id]主键...
 
 数据保护与关键保护
 
@@ -2384,7 +2384,7 @@ key5=c6FzfnKm7UR7xqI2NFpZ+fEKBfSU7+1NvRw+XWQ9U39MONWqk5gvoyOCdFR1kUgeg46jrN5dGXk
 
 以下配置属性支持使用带有秘密密钥的 PKCS12 钥匙店：
 
-...尼菲. 流文件. 存储库. 加密.key. 提供商. 实施 = org. apache. nifi. 安全. kms. 关键商店关键提供者 nifi. 流文件. 存储库. 加密.key. 提供商. 位置] ./conf/存储.p12 尼菲.流文件.存储.加密.key.提供商.密码=KEYSTORE_PASSWORD尼菲.流文件.存储.加密.key.id]主键...
+...NIFI. 流文件. 存储库. 加密.key. 提供商. 实施 = org. apache. nifi. 安全. kms. 关键商店关键提供者 nifi. 流文件. 存储库. 加密.key. 提供商. 位置] ./conf/存储.p12 NIFI.流文件.存储.加密.key.提供商.密码=KEYSTORE_PASSWORDNIFI.流文件.存储.加密.key.id]主键...
 
 #### 键旋转
 
@@ -2426,7 +2426,7 @@ key5=c6FzfnKm7UR7xqI2NFpZ+fEKBfSU7+1NvRw+XWQ9U39MONWqk5gvoyOCdFR1kUgeg46jrN5dGXk
 - 可能导致数据丢失
 - 一遇问题，社区不直接支持
 
-每一次尝试都试图提供关于每个功能的实验警告性质的更详细和具体的信息。围绕特定实验功能的问题应直接到[阿帕奇尼菲开发人员邮件列表](mailto:dev@nifi.apache.org)。
+每一次尝试都试图提供关于每个功能的实验警告性质的更详细和具体的信息。围绕特定实验功能的问题应直接到[阿帕奇NIFI开发人员邮件列表](mailto:dev@nifi.apache.org)。
 
 ## 其他管理功能
 
